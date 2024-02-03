@@ -1,0 +1,36 @@
+.clock {
+  width: 278px;
+  height: 185px;
+  flex-shrink: 0;
+}
+.greeting {
+  color: #fff;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 166.667% */
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.HHMM {
+  color: #fff;
+  font-family: Inter;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100px; /* 100% */
+  letter-spacing: -2.5px;
+  width: 244px;
+  height: 100px;
+}
+.location {
+  color: #fff;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; /* 186.667% */
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}

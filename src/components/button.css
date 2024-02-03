@@ -1,0 +1,31 @@
+.btn {
+  width: 115px;
+  height: 39px;
+  flex-shrink: 0;
+  border-radius: 28px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  cursor: pointer;
+}
+.more {
+  color: #000;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 14px; /* 116.667% */
+  letter-spacing: 3.75px;
+  text-transform: uppercase;
+  margin-left: 9px;
+  opacity: 0.5;
+  width: 42px;
+}
+.upside-down {
+  transform: rotate(180deg);
+}
+.round {
+  transition: all 0.5s ease-in-out;
+}
