@@ -8,8 +8,7 @@ import Hidden from './components/Hidden';
 const App = () => {
   const [display, setDisplay] = useState(true);
   const isNightTime = () => {
-    // const currentHour = new Date().getHours();
-    const currentHour = 9;
+    const currentHour = new Date().getHours();
     return currentHour >= 19 || currentHour < 7;
   };
   return (
