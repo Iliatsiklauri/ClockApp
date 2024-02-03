@@ -27,7 +27,7 @@ const Quote = () => {
         onClick={fetchData}
         className={`rotate-span absolute right-0 cursor-pointer `}
       >
-        <img src="public\Combined Shape.png" alt="" />
+        <img src="Combined Shape.png" alt="" />
       </span>
       {quote && (
         <>

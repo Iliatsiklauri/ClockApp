@@ -24,12 +24,12 @@ const Clock = ({ func }: propType) => {
       <div>
         {func() ? (
           <div className="flex gap-4">
-            <img src="public\Path (1).png" alt="" />
+            <img src="Path (1).png" alt="" />
             <p className="greeting">Good Night</p>
           </div>
         ) : (
           <div className="flex gap-4">
-            <img src="public\Combined Shape 1.png" alt="" />
+            <img src="Combined Shape 1.png" alt="" />
             <p className="greeting">Good Morning</p>
           </div>
         )}
