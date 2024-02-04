@@ -26,7 +26,7 @@ const Clock = ({ func, display }: propType) => {
         {func() ? (
           <div className="greet flex gap-4">
             <img src="/public/Path (1).png" alt="" />
-            <p className="greeting">Good Night</p>
+            <p className="greeting">Good evening , it's currently</p>
           </div>
         ) : (
           <div className="greet flex gap-4">
