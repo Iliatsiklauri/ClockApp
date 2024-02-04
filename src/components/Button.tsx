@@ -13,7 +13,7 @@ const Button = ({ setDisplay, display }: ButtonProps) => {
     <div className="btn" onClick={func}>
       <p className="more">{display ? 'MORE' : 'LESS'}</p>
       <div className={`round ${display ? 'upside-down' : null} `}>
-        <img src="/public/Group 3.png" alt="" />
+        <img src="Group 3.png" alt="" />
       </div>
     </div>
   );

@@ -13,8 +13,8 @@ const App = () => {
   };
   return (
     <div className={`wrapper ${isNightTime() ? 'night' : 'day'}`}>
-      <Quote />
-      <Clock func={isNightTime} />
+      <Quote display={display} />
+      <Clock func={isNightTime} display={display} />
       <Button setDisplay={setDisplay} display={display} />
       <Hidden display={display} func={isNightTime} />
     </div>

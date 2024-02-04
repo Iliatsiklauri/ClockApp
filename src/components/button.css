@@ -29,3 +29,37 @@
 .round {
   transition: all 0.5s ease-in-out;
 }
+@media screen and (width > 767px) {
+  .btn {
+    width: 146px;
+    height: 56px;
+    flex-shrink: 0;
+    gap: 30px;
+  }
+  .more {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; /* 175% */
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+  .round img {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+  }
+  .btn {
+    margin-bottom: 90px;
+  }
+}
+@media screen and (width > 1339px) {
+  .btn {
+    margin-bottom: 50px;
+    align-self: flex-end;
+    margin-right: 160px;
+  }
+}

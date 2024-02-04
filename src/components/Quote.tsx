@@ -6,12 +6,15 @@ type ApiType = {
   text: string;
   author: string;
 };
+type propType = {
+  display: boolean;
+};
 const obj = {
   text: '"Slowly is the fastest way to success. Every measured step forward builds a foundation for lasting achievement."',
   author: 'ilia tsiklauri',
 };
 
-const Quote = () => {
+const Quote = ({ display }: propType) => {
   const [quote, setQuote] = useState<ApiType | null>(obj);
 
   const fetchData = () => {
@@ -22,17 +25,17 @@ const Quote = () => {
   };
 
   return (
-    <div className="quote-wrapper">
+    <div className={`quote-wrapper ${display ? null : 'hiddden'}`}>
       <span
         onClick={fetchData}
-        className={`rotate-span absolute right-0 cursor-pointer `}
+        className={`spann rotate-span absolute right-0 cursor-pointer`}
       >
         <img src="Combined Shape.png" alt="" />
       </span>
       {quote && (
         <>
           <p className="quote">{quote.text}</p>
-          <p className="author">{quote.author}</p>
+          <p className="author">{quote.author.replace(/, type\.fit$/, '')}</p>
         </>
       )}
     </div>

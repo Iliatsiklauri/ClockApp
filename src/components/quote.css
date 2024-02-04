@@ -6,7 +6,13 @@
   flex-direction: column;
   gap: 8px;
   position: relative;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out, visibility 1s linear 0.5s;
+}
+.hiddden {
+  opacity: 0;
+  visibility: hidden;
 }
 .quote,
 .author {
@@ -26,4 +32,32 @@
 .rotate-span {
   transform: rotate(210deg);
   transition: transform 0.5s ease;
+}
+@media screen and (width >= 767px) {
+  .quote {
+    width: 540px;
+    color: #fff;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 155.556% */
+  }
+  .author {
+    color: #fff;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; /* 155.556% */
+  }
+  .quote-wrapper {
+    width: 540px;
+    top: 0;
+  }
+  .spann {
+    right: 0;
+    opacity: 1;
+    fill: white;
+  }
 }

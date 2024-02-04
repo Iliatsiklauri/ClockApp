@@ -28,26 +28,31 @@ const Hidden = ({ func, display }: prop) => {
   }, []);
   return (
     <div
-      className={`details-wrapper ${display ? 'mb-[-309px]' : null} ${
+      className={`details-wrapper ${display ? 'btm' : 'notbtm'} ${
         func() ? 'nightmode' : 'daymode'
       }`}
     >
+      <div className="line"></div>
       <div className="details-box">
-        <div className="flex">
-          <p>CURRENT TIMEZONE</p>
-          <h1>{timezone}</h1>
+        <div className="firstwrap">
+          <div className="first flex">
+            <p>CURRENT TIMEZONE</p>
+            <h1>{timezone}</h1>
+          </div>
+          <div className="second flex">
+            <p>Day of the year</p>
+            <h1>{dayOfYear}</h1>
+          </div>
         </div>
-        <div className="flex">
-          <p>Day of the year</p>
-          <h1>{dayOfYear}</h1>
-        </div>
-        <div className="flex">
-          <p>Day of the week</p>
-          <h1>{dayOfWeek}</h1>
-        </div>
-        <div className="flex">
-          <p>Week number</p>
-          <h1>{weekNumber}</h1>
+        <div className="secondwrap">
+          <div className="third flex">
+            <p>Day of the week</p>
+            <h1>{dayOfWeek}</h1>
+          </div>
+          <div className="forth flex">
+            <p>Week number</p>
+            <h1>{weekNumber}</h1>
+          </div>
         </div>
       </div>
     </div>

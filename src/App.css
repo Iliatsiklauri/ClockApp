@@ -24,3 +24,15 @@
 .day {
   background-image: url('/public/bg2.svg');
 }
+
+@media screen and (width >= 767px) {
+  .wrapper {
+    padding-left: 64px;
+    height: 1024px;
+  }
+}
+@media screen and (width >= 1200px) {
+  .wrapper {
+    height: 100vh;
+  }
+}

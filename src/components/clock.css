@@ -2,6 +2,7 @@
   width: 278px;
   height: 185px;
   flex-shrink: 0;
+  transition: all 0.5s ease-out;
 }
 .greeting {
   color: #fff;
@@ -33,4 +34,70 @@
   line-height: 28px; /* 186.667% */
   letter-spacing: 3px;
   text-transform: uppercase;
+}
+.marg {
+  margin-top: -200px;
+}
+@media screen and (width > 767px) {
+  .HHMM {
+    color: #fff;
+    font-family: Inter;
+    font-size: 175px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 175px;
+    letter-spacing: -4.375px;
+    height: 175px;
+  }
+
+  .location {
+    color: #fff;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; /* 155.556% */
+    letter-spacing: 3.6px;
+    text-transform: uppercase;
+  }
+  .greet {
+    width: 520px;
+  }
+  .greeting {
+    color: #fff;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 155.556% */
+    letter-spacing: 3.6px;
+    text-transform: uppercase;
+  }
+  .marg {
+    margin-top: 0;
+    margin-bottom: 200px;
+  }
+  .clock {
+    margin-bottom: 200px;
+  }
+}
+@media screen and (width > 1399px) {
+  .clock {
+    display: flex;
+    width: 619px;
+    height: 288px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: -70px;
+  }
+  .MMHH {
+    color: #fff;
+    font-family: Inter;
+    font-size: 200px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 200px; /* 100% */
+    letter-spacing: -5px;
+  }
 }

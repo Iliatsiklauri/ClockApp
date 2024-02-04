@@ -9,8 +9,9 @@ type ApiResponse = {
 
 type propType = {
   func: Function;
+  display: boolean;
 };
-const Clock = ({ func }: propType) => {
+const Clock = ({ func, display }: propType) => {
   const [timezone, setTimezone] = useState<string>('');
   const [datetime, setDatetime] = useState<string>('');
   useEffect(() => {
@@ -20,17 +21,17 @@ const Clock = ({ func }: propType) => {
     });
   }, []);
   return (
-    <div className="clock flex flex-col gap-4">
+    <div className={`clock flex flex-col gap-4 ${display ? null : 'marg'}`}>
       <div>
         {func() ? (
-          <div className="flex gap-4">
+          <div className="greet flex gap-4">
             <img src="/public/Path (1).png" alt="" />
             <p className="greeting">Good Night</p>
           </div>
         ) : (
-          <div className="flex gap-4">
+          <div className="greet flex gap-4">
             <img src="/public/Combined Shape 1.png" alt="" />
-            <p className="greeting">Good Morning</p>
+            <p className="greeting">Good Morning, it's currently</p>
           </div>
         )}
       </div>
