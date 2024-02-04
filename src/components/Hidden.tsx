@@ -1,5 +1,3 @@
-// Hidden.tsx
-
 import { useState, useEffect } from 'react';
 import { useWorldTimeApiHidden, ApiResponseHidden } from './api';
 import './hidden.css';
@@ -16,13 +14,13 @@ const Hidden = ({ func, display }: prop) => {
   const [timezone, setTimezone] = useState<string>('');
 
   useEffect(() => {
-    useWorldTimeApiHidden(display).then((res: { data: ApiResponseHidden }) => {
+    useWorldTimeApiHidden().then((res: { data: ApiResponseHidden }) => {
       setDayOfWeek(res.data.day_of_week);
       setDayOfYear(res.data.day_of_year);
       setWeekNumber(res.data.week_number);
       setTimezone(res.data.timezone);
     });
-  }, [display]);
+  }, []);
 
   return (
     <div

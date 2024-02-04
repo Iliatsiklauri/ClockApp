@@ -1,5 +1,3 @@
-// api.ts
-
 import axios from 'axios';
 
 export type ApiResponseClock = {
@@ -18,8 +16,6 @@ export const useWorldTimeApiClock = () => {
   return axios.get<ApiResponseClock>('https://worldtimeapi.org/api/ip');
 };
 
-export const useWorldTimeApiHidden = (display: boolean) => {
-  return axios.get<ApiResponseHidden>('https://worldtimeapi.org/api/ip', {
-    params: { display },
-  });
+export const useWorldTimeApiHidden = () => {
+  return axios.get<ApiResponseHidden>('https://worldtimeapi.org/api/ip', {});
 };

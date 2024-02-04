@@ -40,22 +40,14 @@
 }
 @media screen and (width > 767px) {
   .HHMM {
-    color: #fff;
-    font-family: Inter;
     font-size: 175px;
-    font-style: normal;
-    font-weight: 700;
     line-height: 175px;
     letter-spacing: -4.375px;
     height: 175px;
   }
 
   .location {
-    color: #fff;
-    font-family: Inter;
     font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
     line-height: 28px; /* 155.556% */
     letter-spacing: 3.6px;
     text-transform: uppercase;
@@ -64,11 +56,7 @@
     width: 520px;
   }
   .greeting {
-    color: #fff;
-    font-family: Inter;
     font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 28px; /* 155.556% */
     letter-spacing: 3.6px;
     text-transform: uppercase;
@@ -92,11 +80,7 @@
     margin-bottom: -70px;
   }
   .MMHH {
-    color: #fff;
-    font-family: Inter;
     font-size: 200px;
-    font-style: normal;
-    font-weight: 700;
     line-height: 200px; /* 100% */
     letter-spacing: -5px;
   }

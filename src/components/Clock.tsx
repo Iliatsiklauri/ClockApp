@@ -1,5 +1,3 @@
-// Clock.tsx
-
 import { useState, useEffect } from 'react';
 import { useWorldTimeApiClock, ApiResponseClock } from './api';
 import './clock.css';
