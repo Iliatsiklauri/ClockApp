@@ -1,31 +1,29 @@
+// Hidden.tsx
+
 import { useState, useEffect } from 'react';
-import axios from 'axios';
+import { useWorldTimeApiHidden, ApiResponseHidden } from './api';
 import './hidden.css';
 
 type prop = {
   func: Function;
   display: boolean;
 };
+
 const Hidden = ({ func, display }: prop) => {
-  type ApiResponse = {
-    day_of_week: number;
-    day_of_year: number;
-    week_number: number;
-    timezone: string;
-  };
   const [dayOfWeek, setDayOfWeek] = useState<number>(0);
   const [dayOfYear, setDayOfYear] = useState<number>(0);
   const [weekNumber, setWeekNumber] = useState<number>(0);
   const [timezone, setTimezone] = useState<string>('');
 
   useEffect(() => {
-    axios.get<ApiResponse>('http://worldtimeapi.org/api/ip').then((res) => {
+    useWorldTimeApiHidden(display).then((res: { data: ApiResponseHidden }) => {
       setDayOfWeek(res.data.day_of_week);
       setDayOfYear(res.data.day_of_year);
       setWeekNumber(res.data.week_number);
       setTimezone(res.data.timezone);
     });
-  }, []);
+  }, [display]);
+
   return (
     <div
       className={`details-wrapper ${display ? 'btm' : 'notbtm'} ${

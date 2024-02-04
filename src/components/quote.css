@@ -61,3 +61,8 @@
     fill: white;
   }
 }
+@media screen and (width > 1200px) {
+  .quote-wrapper {
+    margin-top: 20px;
+  }
+}
