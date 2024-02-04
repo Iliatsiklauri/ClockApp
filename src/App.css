@@ -19,10 +19,10 @@
   overflow: hidden;
 }
 .night {
-  background-image: url('/public/Object.svg');
+  background-image: url('Object.svg');
 }
 .day {
-  background-image: url('/public/bg2.svg');
+  background-image: url('bg2.svg');
 }
 
 @media screen and (width >= 767px) {
