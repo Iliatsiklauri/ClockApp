@@ -138,6 +138,9 @@
     margin-bottom: 0;
     position: relative;
   }
+  .details-box {
+    gap: 500px;
+  }
   .notbtm {
     margin-bottom: 275px;
   }
